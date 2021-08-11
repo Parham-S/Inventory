@@ -1,0 +1,595 @@
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.editInv-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+  border-radius: 3px;
+  height: auto;
+  width: 343px;
+  margin-top: 6rem;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container {
+    width: 1020px;
+  }
+}
+.editInv-container__title-cont {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-top: 16px;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container__title-cont {
+    border-bottom: 1px solid #bdc5d5;
+    padding-bottom: 21px;
+  }
+}
+.editInv-container__title-cont--img {
+  margin-left: 24px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container__title-cont--img {
+    margin-left: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container__title-cont--img {
+    margin-left: 44px;
+  }
+}
+.editInv-container__title-cont--title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container__title-cont--title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__wrapper {
+    display: flex;
+  }
+}
+.editInv-container .inv-form__item-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details {
+    border-right: 1px solid #bdc5d5;
+    width: 320px;
+    padding-right: 31px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-details {
+    width: 469px;
+    padding-right: 40px;
+    margin-left: 40px;
+  }
+}
+.editInv-container .inv-form__item-details--title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  border-top: 1px solid #bdc5d5;
+  color: #13182c;
+  font-size: 20px;
+  line-height: 28px;
+  height: 2.25rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--title {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-details--title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.editInv-container .inv-form__item-details--name-label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--name-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-details--name-input {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #13182c;
+  background: #ffffff;
+  border: 1px solid #bdc5d5;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+}
+.editInv-container .inv-form__item-details--name-input:focus {
+  border: 1px solid #2e66e5;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--name-input {
+    font-size: 14px;
+    line-height: 22px;
+    height: 38px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--name-input {
+    margin-bottom: 24px;
+  }
+}
+.editInv-container .inv-form__item-details--description-label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--description-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-details--description-input {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #13182c;
+  background: #ffffff;
+  border: 1px solid #bdc5d5;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+  height: 120px;
+}
+.editInv-container .inv-form__item-details--description-input:focus {
+  border: 1px solid #2e66e5;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--description-input {
+    font-size: 14px;
+    line-height: 22px;
+    height: 38px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--description-input {
+    height: 120px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-details--description-input {
+    height: 120px;
+  }
+}
+.editInv-container .inv-form__item-details--category-label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--category-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-details--category-options {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #13182c;
+  background: #ffffff;
+  border: 1px solid #bdc5d5;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+}
+.editInv-container .inv-form__item-details--category-options:focus {
+  border: 1px solid #2e66e5;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--category-options {
+    font-size: 14px;
+    line-height: 22px;
+    height: 38px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-details--category-options {
+    margin-bottom: 24px;
+  }
+}
+.editInv-container .inv-form__item-availability {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability {
+    width: 320px;
+    border: none;
+    margin-left: 2rem;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-availability {
+    width: 470px;
+    padding-left: 40px;
+    margin-right: 40px;
+  }
+}
+.editInv-container .inv-form__item-availability--title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  border-top: 1px solid #bdc5d5;
+  color: #13182c;
+  font-size: 20px;
+  line-height: 28px;
+  height: 2.25rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--title {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-availability--title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.editInv-container .inv-form__item-availability--status-title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--status-title {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-availability--status-inStock {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--status-inStock {
+    margin-left: 32px;
+    margin-bottom: 27px;
+  }
+}
+.editInv-container .inv-form__item-availability--status-inStock-label {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5c667e;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--status-inStock-label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.editInv-container .inv-form__item-availability--status-outStock {
+  margin-left: 94px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--status-outStock {
+    margin-left: 40px;
+  }
+}
+.editInv-container .inv-form__item-availability--status-outStock-label {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5c667e;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--status-outStock-label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.editInv-container .inv-form__item-availability--quantity-label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--quantity-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-availability--quantity-input {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #13182c;
+  background: #ffffff;
+  border: 1px solid #bdc5d5;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+}
+.editInv-container .inv-form__item-availability--quantity-input:focus {
+  border: 1px solid #2e66e5;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--quantity-input {
+    font-size: 14px;
+    line-height: 22px;
+    height: 38px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .inv-form__item-availability--quantity-input {
+    width: 122px;
+  }
+}
+.editInv-container .inv-form__item-availability--warehouse-label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #13182c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--warehouse-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .inv-form__item-availability--warehouse-options {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #13182c;
+  background: #ffffff;
+  border: 1px solid #bdc5d5;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+}
+.editInv-container .inv-form__item-availability--warehouse-options:focus {
+  border: 1px solid #2e66e5;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .inv-form__item-availability--warehouse-options {
+    font-size: 14px;
+    line-height: 22px;
+    height: 38px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+.editInv-container .button {
+  margin-top: 16px;
+  display: flex;
+  margin-left: 24px;
+  height: 68px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button {
+    padding-left: 16px;
+    margin-top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    width: 704px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .button {
+    width: 1020px;
+  }
+}
+.editInv-container .button__cancel {
+  border-radius: 20px;
+  min-width: 139px;
+  width: auto;
+  height: 36px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #bdc5d5;
+  margin-right: 17px;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__cancel {
+    min-width: 72px;
+    width: 72px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__cancel {
+    margin-top: 0;
+  }
+}
+.editInv-container .button__save {
+  border-radius: 20px;
+  min-width: 139px;
+  width: auto;
+  height: 36px;
+  border: none;
+  border-radius: 20px;
+  background: #2e66e6;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__save {
+    min-width: 72px;
+    width: 72px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__save {
+    padding: 0.5rem;
+    margin-right: 32px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .button__save {
+    margin-right: 40px;
+  }
+}
+.editInv-container .button__add {
+  border-radius: 20px;
+  min-width: 139px;
+  width: auto;
+  height: 36px;
+  border: none;
+  border-radius: 20px;
+  background: #2e66e6;
+  width: 140px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__add {
+    min-width: 72px;
+    width: 72px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .editInv-container .button__add {
+    width: 138px;
+    padding: 0.5rem;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .editInv-container .button__add {
+    min-width: 72px;
+    margin-right: 40px;
+  }
+}

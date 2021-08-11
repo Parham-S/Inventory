@@ -1,0 +1,239 @@
+@import '../../partials/fonts';
+@import '../../partials/mixins';
+@import '../../partials/partials';
+
+.error-message {
+  display: flex;
+  align-items: center;
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: red;
+  margin-left: 24px;
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+  border-radius: 3px;
+  height: auto;
+  width: 343px;
+  margin-top: 6rem;
+  z-index: 1;
+  @include tablet {
+    width: 704px;
+  }
+  @include desktop {
+    width: 1020px;
+  }
+
+  &__title-cont {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: $white;
+    padding-top: 16px;
+    @include tablet {
+      border-bottom: 1px solid #bdc5d5;
+      padding-bottom: 21px;
+    }
+    &--img {
+      margin-left: 24px;
+      margin-right: 12px;
+      @include tablet {
+        margin-left: 36px;
+      }
+      @include desktop {
+        margin-left: 44px;
+      }
+    }
+    &--title {
+      @include formMainTitle;
+    }
+  }
+  .form {
+    &__wrapper {
+      @include tablet {
+        display: flex;
+        margin-bottom: 32px;
+      }
+    }
+    &__warehouse {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      @include tablet {
+        border-right: 1px solid #bdc5d5;
+        width: 320px;
+        padding-right: 31px;
+      }
+      @include desktop {
+        width: 469px;
+        padding-right: 40px;
+        margin-left: 40px;
+      }
+      &--title {
+        @include formTitle;
+      }
+      &--name-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--name-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--address-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--address-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--city-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--city-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--country-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--country-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+    }
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      @include tablet {
+        width: 320px;
+        border: none;
+        margin-left: 2rem;
+        padding-top: 0;
+      }
+      @include desktop {
+        width: 470px;
+        padding-left: 40px;
+        margin-right: 40px;
+      }
+      &--title {
+        @include formTitle;
+      }
+      &--name-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--name-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--position-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--position-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--phone-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--phone-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+      &--email-label {
+        @include formLabel;
+        margin-bottom: 4px;
+      }
+      &--email-input {
+        @include formInput;
+        @include tablet {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+  .button {
+    margin-top: 16px;
+    display: flex;
+    margin-left: 24px;
+    height: 68px;
+    @include tablet {
+      padding-left: 16px;
+      margin-top: 0;
+      justify-content: flex-end;
+      align-items: center;
+      width: 704px;
+      height: 70px;
+    }
+    @include desktop {
+      width: 1020px;
+    }
+    &__cancel {
+      @include button;
+      background-color: #ffffff;
+      border: 1px solid #bdc5d5;
+      margin-right: 17px;
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+    &__save {
+      @include button;
+      background: #2e66e6;
+      color: #ffffff;
+      @include tablet {
+        padding: 0.5rem;
+        margin-right: 32px;
+        margin-top: 0;
+      }
+      @include desktop {
+        min-width: 72px;
+        margin-right: 40px;
+      }
+    }
+    &__add {
+      @include button;
+      background: #2e66e6;
+      width: 140px;
+      color: #ffffff;
+      @include tablet {
+        width: 138px;
+        padding: 0.5rem;
+        margin-right: 32px;
+      }
+      @include desktop {
+        min-width: 72px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
